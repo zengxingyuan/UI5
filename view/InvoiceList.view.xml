@@ -18,7 +18,9 @@
                         }
                     }"
                     numberUnit="{view>/currency}"
+                    numberState="{=${invoice>ExtendedPrice}>50?'Error':'Success'}"
             />
+            <!-- = is used to initiate a new binding syntax-->
         </items>
     </List>
 </mvc:View>
